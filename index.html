@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+
+        <form class="formCep" id="form-cep">
+            <label class="labelCep">CEP Correios</label>
+            <input class="inputCep" type="text" placeholder="Digite o seu CEP" maxlength="8" autocomplete="postal-code" required>
+            <button type="submit" class="btnCep">Enviar</button>
+        </form>
+
+
+        <div class="dadosCep">
+            <h1 class="tituloDadosCep"> Dados dos Ceps</h1>
+            <div class="resultado"></div>
+        </div>
+
+    </div>
+    <script src="ManipulandoDom.js"></script>
+</body>
+
+</html>

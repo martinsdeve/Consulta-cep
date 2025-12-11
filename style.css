@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #0F141A;
+    --cor-fundo2: #1A2233;
+    --cor-sombra: rgba(0, 0, 0, 0.55);
+
+    --cor-input: #232832;
+    --cor-texto: #F3F4F6;
+
+    --cor-primaria: #0EA5E9;
+    --cor-primaria-hover: #2190c4;
+
+    --cor-borda-input: #006EFF;
+    --cor-borda-input-focus: #00b7ff;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteiner {
+    display: flex;
+    gap: 20px;
+}
+
+.formCep {
+    background: var(--cor-fundo2);
+    padding: 25px;
+    border-radius: 12px;
+    width: 430px;
+    max-width: 90%;
+    height: 226px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 10px 25px var(--cor-sombra);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+.dadosCep {
+    background: var(--cor-fundo2);
+    padding: 25px;
+    border-radius: 12px;
+    width: 430px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 10px 25px var(--cor-sombra);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.labelCep {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.inputCep {
+    background: var(--cor-input);
+    color: var(--cor-texto);
+    border: 1px solid transparent;
+    outline: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.inputCep:focus {
+    border-color: var(--cor-borda-input-focus);
+    box-shadow: 0 0 10px var(--cor-borda-input-focus);
+}
+
+.btnCep {
+    background: var(--cor-primaria);
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btnCep:hover {
+    background: var(--cor-primaria-hover);
+}
+
+.tituloDadosCep {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
